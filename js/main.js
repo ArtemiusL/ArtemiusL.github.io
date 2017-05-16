@@ -14,11 +14,11 @@ var body = $('body,html') ;
  	}
 }
 window.onload = function() {
-	if(window.innerWidth > 630 ) {
+	if(document.documentElement.clientWidth > 630 ) {
 		setTimeout(scrollPort, 15000);
 	}
 	else {
-		setTimeout(scrollPort, 10000);
+		setTimeout(scrollPort, 1000);
 	}
 }
 var audio = document.querySelector('.top-header-audio');
