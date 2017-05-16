@@ -18,7 +18,7 @@ window.onload = function() {
 		setTimeout(scrollPort, 15000);
 	}
 	else {
-		setTimeout(scrollPort, 11000);
+		setTimeout(scrollPort, 10000);
 	}
 }
 var audio = document.querySelector('.top-header-audio');
