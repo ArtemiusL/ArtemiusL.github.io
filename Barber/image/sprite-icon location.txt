@@ -1,0 +1,17 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icon-login {
+    width: 15px;
+    height: 15px;
+    background-position: -25px -25px;
+}
+
+.sprite-icon-password {
+    width: 15px;
+    height: 17px;
+    background-position: -25px -90px;
+}

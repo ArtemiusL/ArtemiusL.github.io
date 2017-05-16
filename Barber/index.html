@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Барбершоп &laquo;Бородинский&raquo;</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+	<style type="text/css">
+		@keyframes bounce {
+			0% { transform: translateY(-2000px); }
+			70% { transform: translateY(30px); }
+			90% { transform: translateY(-10px); }
+			100% { transform: translateY(0); }
+		}
+		@keyframes shake {
+			0%, 100% 								{transform: translateX(0);}
+			10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+			20%, 40%, 60%, 80%			{transform: translateX(10px);}
+		}
+	</style>
+	
+
+</head>
+<body class="main-body">
+	<header>
+		<div class="container clearfix ">
+			<nav class="main-navigation"><ul>
+				<li><span>Главная</span></li>
+				<li><a href="#">Информация</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="price.html">Прайс-лист</a></li>
+				<li><a href="#">Магазин</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</nav>
+		<div class="user-block">
+			<a href="#" class="login">Вход</a>
+		</div>
+	</div>
+</header>
+<main>
+	<div class="container clearfix ">
+		<div class="logo-box">
+			<img src="image/logo.png" class="index-logo" width="368" height="204">
+		</div>
+		<section class="commercial clearfix">
+			<div class="commercial-item"> <b>Быстро</b> <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки! Наталья Коновалова</p> </div>
+			<div class="commercial-item"> <b>Круто</b> <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p></div>
+			<div class="commercial-item"> <b>Дорого</b> <p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p></div>
+		</section>
+		<div class="first-block clearfix">
+			<section class="first-left">
+				<h2 class="index-content-title">Новости</h2>
+				<ul class="news-preview">
+					<li><p>
+						Нам наконец завезли Ягермайстер! Теперь вы&nbsp;можете пропустить стаканчик во&nbsp;время стрижки</p>
+						<time datetime="2013-09-25">25 сентября</time>
+					</li>
+					<li><p>
+						В&nbsp;нашей команде пополнение: Борис &laquo;Бритва&raquo; Стригунец, обладатель множества титулов и наград, пополнил наши стройные ряды</p>
+						<time datetime="2013-09-19">19 сентября</time>
+					</li>
+				</ul>
+				<a class="btn" href="#">Все новости</a>
+			</section>
+			<section class="first-right">
+				<h2 class="index-content-title">фотогалерея</h2>
+				<div class="gallery">
+					<figure class="gallery-content">
+						<img src="image/fotogallery.jpg" width="">
+					</figure>
+					<button class="btn gallery-pre" disabled>назад</button>
+					<button class="btn gallery-next">вперед</button>
+					<div>
+					</section>
+				</div>
+				<div class="first-block clearfix">
+					<section class="first-left">
+						<h2 class="index-content-title">контактная информация</h2>
+						<p>барбершоп <бородинский><br>
+							адрес:г.санкт-петербург,б.конюшенная,д.19/8<br>
+							телефон:+7 (495)666-02-66</p>
+							<p>время работы:<br>
+								пн-пт:с 10:00 до 22:00<br>
+								сб-вс: с 10:00 до 19:00</p>
+								<a class="btn js-open-map" href="#">Как проехать</a>
+								<a class="btn" href="#">обратная связь</a>
+							</section>
+							<section class="first-right">
+								<h2 class="index-content-title">записаться</h2>
+								<p>укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+								<form class="clearfix" action="#" method="post">
+									<input type="text" value="" placeholder="дата">
+									<input type="text" value="" placeholder="время">
+									<input type="text" value="" placeholder="ваше имя">					<input type="tel" value="" placeholder="телефон">
+									<button class="btn" type="submit">отправить</button>
+								</form>	
+							</section>
+						</div>	
+						
+					</div>
+				</main>
+				<footer>
+					<div class="container clearfix">
+						<div class="contacts ">
+							барбершоп &lt;&lt;бородинский&gt;&gt; <br>
+							адрес: г.Санкт-петербург, ул.б.конюшенная.д.19/8 <br>
+							<a href="#">как нас найти?</a> <br>
+							телефон:+7(495)666-02-66
+						</div>
+						<div class="follow "> Давайте дружить <br>
+							<a href="https://vk.com/id22256899" class="vk"></a>
+							<a href="#" class="fb"></a>
+							<a href="#" class="ig"></a>
+						</div>
+						<div class="htmlacademy">Разработано: <a href="https://htmlacademy.ru">htmlacademy.ru</a></div>
+					</div>
+				</footer>
+				<div class="modal-content">
+					<button class="modal-content-close" type="button" title="закрыть">Закрыть</button>
+					<h2 class="modal-content-title">Личный кабинет</h2>
+					<p>Введите свой логин и пароль</p>
+					<form action="#" class="login-form" method="post">
+						<input type="text" class="icon-user" name="login" placeholder="Логин">
+						<input type="password" class="icon-password" name="password" placeholder="Пароль">
+						<label class="login-checkbox">
+							<input type="checkbox" name="remember">
+							<span class="checkbox-indicator"></span>
+							Запомните меня
+								<a href="#" class="restore">Я забыл пароль!</a>
+								<button class="btn" type="submit">Войти</button>
+						</label>
+
+					</form>
+				</div>
+				<div class="modal-content-map">
+					<button class="modal-content-close" type="button" title="закрыть">Закрыть</button>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1483295530761" width="766" height="561" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<div id="yandex-map"></div>
+				</div>
+				<div class="modal-overlay"></div>
+				<script src="JS/popup.js"></script>
+				<script src="JS/map-popup.js"></script>
+			</body>
+			</html>
