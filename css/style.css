@@ -552,13 +552,15 @@ h1,h2,h3,h4 {
 	animation: cover-title-left 1s 9.5s ease forwards;
 
 }
+
 }
 @media(max-width: 430px) {
 	.top-header-audio {
-		margin-bottom: 0;
+		display: none;
 	}
 	.top-header {
-		height: 70px;
+		display: none;
+		
 	}
 	.header-cover-title span {
 	font-size: 60px;	
@@ -572,6 +574,28 @@ h1,h2,h3,h4 {
 .header-cover-title-2 {
 	margin-top: -35px;
 }
+.header-cover-title {
+	display: none;
+	
+}
+.header-cover-title-2 {
+	animation: cover-title-left 1s 0.5s ease forwards;
+}
+.header-my-name {
+		animation: header-name 1s 1s ease forwards;
+}
+.header-paragraf {
+	animation: header-prof 1s 2.5s ease forwards;
+}
+	.header-photo-box {
+	animation: header-name 1s 5s ease forwards;
+}
+.header-flex-title {
+	
+	animation: cover-title-left 1s 5.5s ease forwards;
+
+}
+
 }
 /*header-cover*/
 

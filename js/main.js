@@ -3,8 +3,10 @@ var headerBgFixed = document.querySelector(".header-cover-bg");
 var portfolio = document.querySelector(".portfolio");
 var logoBox = document.querySelector(".logo-box");
 var footerBgFixed = document.querySelector(".footer-cover-bg");
-
+var topHeader = document.querySelector('.top-header');
 headerBgFixed.style.height = mainHeader.offsetHeight + "px";
+
+
 
 
 var body = $('body,html') ;
@@ -14,11 +16,17 @@ var body = $('body,html') ;
  	}
 }
 window.onload = function() {
+	if(window.innerWidth < 430 ){
+		audio.pause();
+	} 
 	if(window.innerWidth > 630 ) {
 		setTimeout(scrollPort, 15000);
 	}
+	else if(window.innerWidth > 430 ) {
+		setTimeout(scrollPort, 10000);
+	}
 	else {
-		setTimeout(scrollPort, 1000);
+		setTimeout(scrollPort, 7000);
 	}
 }
 var audio = document.querySelector('.top-header-audio');
