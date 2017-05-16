@@ -14,7 +14,12 @@ var body = $('body,html') ;
  	}
 }
 window.onload = function() {
-	setTimeout(scrollPort, 15000);
+	if(document.documentElement.clientWidth > 630 ) {
+		setTimeout(scrollPort, 15000);
+	}
+	else {
+		setTimeout(scrollPort, 11000);
+	}
 }
 var audio = document.querySelector('.top-header-audio');
 var butonStop = document.querySelector('.audio-stop');
