@@ -14,7 +14,7 @@ var body = $('body,html') ;
  	}
 }
 window.onload = function() {
-	if(document.documentElement.clientWidth > 630 ) {
+	if(window.innerWidth > 630 ) {
 		setTimeout(scrollPort, 15000);
 	}
 	else {
