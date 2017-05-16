@@ -58,6 +58,18 @@
 
     src: url(../Fonts/OpenSans-Bold.ttf);
    }
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello/fontello.eot?34116119');
+  src: url('../fonts/fontello/fontello.eot?34116119#iefix') format('embedded-opentype'),
+       url('../fonts/fontello/fontello.woff2?34116119') format('woff2'),
+       url('../fonts/fontello/fontello.woff?34116119') format('woff'),
+       url('../fonts/fontello/fontello.ttf?34116119') format('truetype'),
+       url('../fonts/fontello/fontello.svg?34116119#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 /*КОНТЕЙНЕР*/
 .container {
@@ -113,14 +125,32 @@ h1,h2,h3,h4 {
 	width: 100%;
 }
 .top-header-audio {
-	width: 700px;
-	height: 50px;
+	width: 700px;	
+	margin-right: 10px;
 }
 .header-audio-wrapper {
 	text-align: center;
-	
+	display: flex;
+	align-items: center;
+	padding-top: 30px;
+	justify-content: center;
 }
-
+.audio-stop {
+	background-color: #fff;
+	margin-right: 10px;
+	padding: 10px 5px;
+	color: #000;
+	text-decoration: none;
+	font-weight: 700;
+}
+.header-contact {
+	background-color: #fff;
+	margin-right: 10px;
+	padding: 10px 5px;
+	color: #000;
+	text-decoration: none;
+	font-weight: 700;
+}
 /*top-header*/
 
 
@@ -396,7 +426,7 @@ h1,h2,h3,h4 {
 	padding-top: 100px;
 	background-color: #fff;
 	position: relative;
-	padding-bottom: 800px;
+	padding-bottom: 50px;
 }
 .portfolio-title {
 	text-align: center;
@@ -477,3 +507,53 @@ margin-bottom: 40px;
 
 
 
+.main-footer {
+	background-image: url(../img/bg.png);
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 200px;
+}
+
+.main-footer-title {
+	color: #fff;
+	text-align: center;
+	font-size: 60px;
+	font-weight: 700;
+	text-shadow: 1px 1px 0px #000;
+	margin-bottom: 40px;
+	
+}
+.contact-items {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.contact-item {
+	font-size: 25px;
+	color: #fff;
+	text-shadow: 1px 1px 0px #000;
+	padding-top: 60px;
+	position: relative;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.contact-item a {
+	color: #fff;
+}
+.contact-item::before {
+	top: 0;
+	position: absolute;
+	font-family: "Fontello";
+	font-size: 45px;
+}
+.contact-item:nth-of-type(1)::before {
+	content: "\E804";
+}
+.contact-item:nth-of-type(2)::before {
+	content: "\E808";
+}
+.contact-item:nth-of-type(3)::before {
+	content: "\F189";
+}
