@@ -1,0 +1,359 @@
+@font-face {
+	font-family: OpenSans;
+	src: url(../fonts/opensans-bold.eot);
+	src: url('../fonts/opensans-bold.eot') format('embedded-opentype'),
+		 url('../fonts/opensans-bold.woff') format('woff'),
+		 url('../fonts/opensans-bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: OpenSans;
+	src: url(../fonts/opensans-regular.eot);
+	src: url('../fonts/opensans-regular.eot') format('embedded-opentype'),
+		 url('../fonts/opensans-regular.woff') format('woff'),
+		 url('../fonts/opensans-regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: OpenSans;
+	src: url(../fonts/opensans-semibold.eot);
+	src: url('../fonts/opensans-semibold.eot') format('embedded-opentype'),
+		 url('../fonts/opensans-semibold.woff') format('woff'),
+		 url('../fonts/opensans-semibold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: OpenSans;
+	src: url(../fonts/opensans-light.eot);
+	src: url('../fonts/opensans-light.eot') format('embedded-opentype'),
+		 url('../fonts/opensans-light.woff') format('woff'),
+		 url('../fonts/opensans-light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: Helvetica-n;
+	src: url(../fonts/HelveticaNeueCyr-Light.otf);
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: Helvetica-n;
+	src: url(../fonts/HelveticaNeueCyr-Bold.otf);
+	font-weight: 700;
+	font-style: normal;
+}
+
+/*КОНТЕЙНЕР*/
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 1000px) {
+  .container {
+    width: 840px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 990px;
+  }
+}
+
+/*КОНТЕЙНЕР*/
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.main-body {
+	font-family: "OpenSans", "Tahoma", sans-serif;
+	font-weight: 400;
+	width: 100%;
+	overflow-x: hidden;
+	background-color: #fff;
+	padding-bottom: 250px;
+}
+
+.main-content {
+	width: 1340px;
+	margin: 0 auto;
+	background-image: url(../img/main-page-photo.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding-top: 30px;
+}
+.main-content .container {
+	position: relative;
+	padding-bottom: 415px;
+}
+.logo-box {
+	margin-bottom: 70px;
+}
+.main-title {
+	font-weight: 300;
+	font-size: 45px;
+	color: #fff;
+	text-shadow: 1px 1px 1px 1px rgba(0,0,0, 0.36);
+	margin-bottom: 55px;
+}
+.main-items {
+	display: flex;
+	flex-wrap: wrap;
+	list-style-position: inside;
+	font-size: 0;
+}
+.main-items li {
+	width: 45%;
+	font-size: 23px;
+	line-height: 28px;
+	font-weight: 300;
+	color: #fff;
+	text-shadow: 1px 1px 1px 1px rgba(0,0,0, 0.36);
+	padding: 0;
+	margin-bottom: 25px;
+}
+.main-items li:nth-of-type(2n-1) {
+	margin-right: 10%;
+}
+
+
+/*Форма*/
+
+.main-form {
+	border: 16px solid #fff;
+	padding: 10px 20px 45px 20px;
+	background-color: #efefef;
+	position: absolute;
+	bottom: -230px;
+	left: 0;
+	width: 100%;
+}
+.form-title {
+	color: #545454;
+	font-weight: 300;
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+.current-step-block {
+	background-color: #4859a6;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+	font-family: "Helvetica-n";
+	padding: 15px 0px;
+	margin-bottom: 60px;
+}
+.main-form-item {
+	width: 580px;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	margin-bottom: 30px;
+	position: relative;
+}
+.main-form-label {
+	width: 40%;
+	font-weight: 400;
+	font-family: "Helvetica-n";
+	color: #545454;
+	font-size: 16px;
+}
+.main-form-input {
+	width: 60%;
+	font-size: 16px;
+	color: #000;
+	line-height: 13px;
+	padding: 12px 20px;
+	border: none;
+	box-shadow: 0px 0px 1px 0px rgba(9,9,9, 0.9);
+	transition: all 0.1s;
+}
+.main-form-input.fail {
+	box-shadow: inset 0px 0px 1px 1px rgba(248,151,144, 0.9);
+}
+.main-form-input::-webkit-input-placeholder {
+	color:#000;
+}
+.main-form-radio-box {
+	width: 60%;
+	font-size: 16px;
+	color: #000;
+	line-height: 13px;
+	position: relative;
+}
+.radio-label:nth-of-type(1) {
+	margin-right: 30px;
+} 
+.main-form-btn {
+	width: 225px;
+	padding: 15px 0px;
+	display: inline-block;
+	margin: 0 auto;
+	text-transform: uppercase;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	color: #fff;
+	background: linear-gradient(rgba(255,255,255, 0.12), rgba(0,0,0, 0.12)), #fd8700;
+	border: none;
+	transition: all 1s;
+}
+.main-form-btn.disabled {
+	background-color: #d6d6d8;
+	color: #aaa;
+	box-shadow: 0px -1px 1px 1px #aaaaaa;
+}
+.main-form-alert {
+	position: absolute;
+	right: -305px;
+	top: 0;
+	width: 285px;
+	padding: 10px 0px;
+	box-shadow: 1px 1px 5px 1px rgba(0,0,0, 0.25);
+	background-color: #fff;
+	color: #d91404;
+	font-size: 13px;
+	text-align: center;
+	z-index: 2;
+}
+/* Алерт для формы */
+.main-form-alert-decor {
+	content: "";
+	position: absolute;
+	left: -20px;
+	width: 20px;
+	height: 20px;
+	border: 0px solid black;
+	overflow: hidden;
+}
+.main-form-alert-decor::before {
+	position: absolute;
+	right: -5px;
+	top: 5px;
+	content: "";
+	width: 10px;
+	height: 10px;
+	background-color: white;
+	transform: rotate(45deg);
+	box-shadow: 0px 0px 5px 1px rgba(0,0,0, 0.25);
+}
+
+
+
+/*Форма*/
+
+
+@media(max-width: 1199px) {
+	.main-content {
+		width: 100%;
+	}
+	.main-form-item {
+		margin-bottom: 40px;
+	}
+	.main-form-alert {
+		right: 0;
+		top: 100%;
+		height: 30px;
+		padding: 5px 0px;
+	}
+	.main-form-alert-decor {
+		display: none;
+	}
+}
+@media(max-width: 767px)  {
+	.main-body {
+		padding-bottom: 20px;
+	}
+	.main-content {
+		-webkit-background-size: auto;
+		background-size: auto;
+		background-repeat: no-repeat;
+		background-position: top;
+	}
+	.logo-box {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.main-title {
+		font-size: 35px;
+	}
+	.main-items li {
+	width: 100%;
+}
+.main-items li:nth-of-type(2n-1) {
+	margin-right: 0%;
+}
+.main-form {
+	position: static;
+}
+.main-form-item {
+	width: 100%;
+	flex-wrap: wrap;
+}
+.main-form-alert {
+	display: none;
+}
+.main-form-label {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.main-form-input {
+	width: 60%;
+}
+}
+@media(max-width: 500px) {
+	.main-form-input {
+	width: 100%;
+}
+.form-title {
+	font-size: 30px;
+}
+.current-step-block {
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.logo-box img {
+	width: 280px;
+}
+.main-title {
+	font-size: 30px;
+}
+.main-form {
+	border: none;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
