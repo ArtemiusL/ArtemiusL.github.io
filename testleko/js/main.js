@@ -62,6 +62,7 @@ radioBtnSuccess.addEventListener('change', radioValidate);
 //проверка радиобатона
 
 //Кнопка отправки
+const formBtn = document.querySelector('.main-form-btn');
 const inputFor = () => {
 	for(let i = 0; i<inputFormList.length; i++){
 		if(!inputFormList[i].value) {
@@ -80,4 +81,4 @@ const validateForm = () => {
 		formBtn.classList.add('disabled');
 	}
 }
-const formBtn = document.querySelector('.main-form-btn');
+
