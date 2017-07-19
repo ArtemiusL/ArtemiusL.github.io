@@ -507,7 +507,7 @@ var screenLevelGenre = ({songs, trueSong, answerCallback}) => {
   const templateAnswer = (answer) => `
     <div class="genre-answer">
     <div class="player-wrapper" data-track="${answer.filePath}"></div>
-    <input type="checkbox" name="answer" value="${answer.genre}" " id="${answer.id}">
+    <input type="checkbox" name="answer" value="${answer.genre}" id="${answer.id}">
     <label class="genre-answer-check" for="${answer.id}"></label>
   </div>`;
 
@@ -542,7 +542,7 @@ var screenLevelGenre = ({songs, trueSong, answerCallback}) => {
   });
 
   const checkAnswer = () => {
-    for (let i = 0; checkboxes.length; i++) {
+    for (let i = 0; i < checkboxes.length; i++) {
       const answerGenre = checkboxes[i].value;
       const trueGenre = trueSong.genre;
 
