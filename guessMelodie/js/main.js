@@ -650,7 +650,6 @@ const renderTimer = function (template) {
 };
 
 function renderState() {
-  debugger
   const state = getState();
   switch (state.screen) {
 
