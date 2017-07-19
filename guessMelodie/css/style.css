@@ -40,7 +40,7 @@ body {
 
 .copyright-link::before {
   bottom: 100%;
-  content: url("/img/ha-logo.png");
+  content: url("../img/ha-logo.png");
   height: 50px;
   left: 0;
   margin-bottom: 0.5em;
@@ -53,7 +53,7 @@ body {
 .player-wrapper {
   animation: fadein 1000ms ease-out;
   animation-iteration-count: 1;
-  background: url("/img/player-background.png") no-repeat 0 100%;
+  background: url("../img/player-background.png") no-repeat 0 100%;
   background-size: cover;
   margin-right: 20px; }
 
@@ -90,7 +90,7 @@ body {
   z-index: 1; }
 
 .logo {
-  background: url("/img/melody-logo.png") center no-repeat;
+  background: url("../img/melody-logo.png") center no-repeat;
   height: 83px;
   left: 50%;
   margin-top: 170px;
@@ -176,13 +176,13 @@ body {
   left: -900em; }
 
 .genre-answer-check {
-  background: url("/img/icon-note-inactive.png") no-repeat;
+  background: url("../img/icon-note-inactive.png") no-repeat;
   height: 49px;
   width: 35px;
   cursor: pointer; }
 
 input[type=checkbox]:checked + .genre-answer-check {
-  background-image: url("/img/icon-note-active.png"); }
+  background-image: url("../img/icon-note-active.png"); }
 
 .genre-answer-send {
   background: #f0eed5;

@@ -202,7 +202,6 @@ function resetGame(state) {
 }
 
 function nextQuestion(state) {
-  debugger
   const newScreen = getRandomScreenName();
   let screenData;
   const songs = getUniqueItemsFromArray(
