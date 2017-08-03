@@ -1,0 +1,29 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-fb-icon {
+    width: 52px;
+    height: 49px;
+    background-position: -10px -10px;
+}
+
+.sprite-lays-icon {
+    width: 52px;
+    height: 49px;
+    background-position: -10px -79px;
+}
+
+.sprite-vk-icon {
+    width: 52px;
+    height: 49px;
+    background-position: -82px -10px;
+}
+
+.sprite-yb-icon {
+    width: 52px;
+    height: 49px;
+    background-position: -82px -79px;
+}
