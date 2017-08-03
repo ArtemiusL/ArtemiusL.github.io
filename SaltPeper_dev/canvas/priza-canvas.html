@@ -22,7 +22,7 @@
   }
 </style>
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script src="priza-canvas.js?1501650743041"></script>
+<script src="priza-canvas.js"></script>
 <script>
 var canvas, stage, exportRoot;
 function init() {
@@ -33,8 +33,7 @@ function handleComplete() {
 	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
 	exportRoot = new lib.prize();
 	stage = new createjs.Stage(canvas);
-	stage.addChild(exportRoot);
-	stage.enableMouseOver();	
+	stage.addChild(exportRoot);	
 	//Registers the "tick" event listener.
 	createjs.Ticker.setFPS(lib.properties.fps);
 	createjs.Ticker.addEventListener("tick", stage);	    

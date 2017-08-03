@@ -1,6 +1,7 @@
 (function (lib, img, cjs, ss) {
 
 var p; // shortcut to reference prototypes
+lib.webFontTxtFilters = {}; 
 
 // library properties:
 lib.properties = {
@@ -9,6 +10,7 @@ lib.properties = {
 	fps: 24,
 	color: "#FFFFFF",
 	opacity: 1.00,
+	webfonts: {},
 	manifest: []
 };
 
@@ -17,15 +19,15 @@ lib.properties = {
 lib.ssMetadata = [];
 
 
+lib.webfontAvailable = function(family) { 
+	lib.properties.webfonts[family] = true;
+	var txtFilters = lib.webFontTxtFilters && lib.webFontTxtFilters[family] || [];
+	for(var f = 0; f < txtFilters.length; ++f) {
+		txtFilters[f].updateCache();
+	}
+};
 // symbols:
 
-
-
-(lib.Символ5 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = null;
 
 
 (lib.Символ3 = function(mode,startPosition,loop) {
@@ -120,40 +122,6 @@ p.nominalBounds = new cjs.Rectangle(-30.5,-11.5,61.1,23.1);
 // stage content:
 (lib.prize = function(mode,startPosition,loop) {
 if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
-
-	// timeline functions:
-	this.frame_0 = function() {
-		this.stop();
-		
-		/* Событие "Помещен указатель мыши"
-		При прохождении указателя через экземпляр символа выполняется функция, в которую можно добавить собственный код.
-		
-		Инструкции:
-		1. Добавьте пользовательский код после строки "// Начало пользовательского кода".
-		Данный код выполняется при прохождении указателя мыши через экземпляр символа.
-		частота — количество вызовов события.
-		*/
-		var frequency = 3;
-		stage.enableMouseOver(frequency);
-		this.object.addEventListener("mouseover", fl_MouseOverHandler);
-		
-		function fl_MouseOverHandler()
-		{
-			this.start();
-			alert("Помещен указатель мыши");
-			this.stop();
-		}
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(24));
-
-	// object
-	this.button_1 = new lib.Символ5();
-	this.button_1.setTransform(39,40.1);
-	new cjs.ButtonHelper(this.button_1, 0, 1, 1);
-
-	this.timeline.addTween(cjs.Tween.get(this.button_1).wait(24));
 
 	// Слой 3
 	this.instance = new lib.Символ3();
