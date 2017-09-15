@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Todo List</title>
+</head>
+<body class="main-body">
+	<div class="container">
+	
+		<section class="main-content">
+			<h1 class="main-title">
+				Todos
+			</h1>
+			
+		</section>
+	</div>
+	</div>
+
+	<template id="main-template">
+	<li class="todo-item" id="todo-item-template">
+				<input type="checkbox" id="itemCheck-1" class="item-input-check">
+				<label for="itemCheck-1" class="item-check-label"></label>
+					<span type="text" class="todo-item__span">	wefwef</span>
+					<button class="todo-item__close" type="button"> 
+				</button>
+				</li>	
+
+
+	<section class="todoapp" id="mainTodoapp">
+				<header class="todo-write">
+				<input type="checkbox" id="writeCheck" class="write-input-check">
+				<label for="writeCheck" class="write-check-label"></label>
+				
+					<input type="text" class="write-input-in" id="mainWriteInput" placeholder="What needs to be done?">
+				</header>
+
+				<ul class="todo-items" id="todoItems">
+				</ul>
+
+				<section class="filters">
+					<span class="tasks-counter">
+						<span id="leftItem"></span> item left
+					</span>
+					<div class="filter-btns">
+						<span class="filter-btn active" id="ALL">all</span>
+						<span class="filter-btn" id="ACTIVE">active</span>
+						<span class="filter-btn" id="COMPLETED">completed</span>
+					</div>
+					<button class="btn-clear-completed" id="clear-completed">Clear completed</button>
+				</section>
+			</section>
+
+
+	</template>
+	<script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

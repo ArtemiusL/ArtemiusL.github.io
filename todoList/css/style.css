@@ -1,0 +1,310 @@
+@font-face {
+font-family: 'Gotham';
+src: url('../fonts/GothamPro.eot');
+src: url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+url('../fonts/GothamPro.woff') format('woff'),
+url('../fonts/GothamPro.ttf') format('truetype'),
+url('../fonts/GothamPro.svg') format('svg');
+font-weight: 400;
+font-style: normal;
+}
+@font-face {
+font-family: 'Gotham';
+src: url('../fonts/GothamPro-Medium.eot');
+src: url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+url('../fonts/GothamPro-Medium.woff') format('woff'),
+url('../fonts/GothamPro-Medium.ttf') format('truetype'),
+url('../fonts/GothamPro-Medium.svg') format('svg');
+font-weight: 500;
+font-style: normal;
+}
+@font-face {
+font-family: 'Gotham';
+src: url('../fonts/GothamPro-Bold.eot');
+src: url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+url('../fonts/GothamPro-Bold.woff') format('woff'),
+url('../fonts/GothamPro-Bold.ttf') format('truetype'),
+url('../fonts/GothamPro-Bold.svg') format('svg');
+font-weight: 700;
+font-style: normal;
+}
+@font-face {
+font-family: 'Gotham';
+src: url('../fonts/GothamPro-Black.eot');
+src: url('../fonts/GothamPro-Black.eot?#iefix') format('embedded-opentype'),
+url('../fonts/GothamPro-Black.woff') format('woff'),
+url('../fonts/GothamPro-Black.ttf') format('truetype'),
+url('../fonts/GothamPro-Black.svg') format('svg');
+font-weight: 900;
+font-style: normal;
+}
+@font-face {
+	font-family: Roboto;
+	src: url(../fonts/Roboto-Regular.ttf);
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Roboto;
+	src: url(../fonts/Roboto-Bold.ttf);
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: Roboto;
+	src: url(../fonts/Roboto-Black.ttf);
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: Roboto;
+	src: url(../fonts/Roboto-Light.ttf);
+	font-weight: 300;
+	font-style: normal;
+}
+
+
+/*Общие*/
+
+* {
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+html {
+	font-size: 1vw;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/*КОНТЕЙНЕР*/
+
+
+/*ШАБЛОН*/
+
+* {
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	
+}
+.main-body {
+	font-family: "Roboto", "Tahoma", sans-serif;
+	font-weight: 400;
+	width: 100%;
+	overflow-x: hidden;
+	background-color: #fff;
+
+}
+.main-title {
+	font-weight: 100;
+	font-size: 40px;
+	color: rgba(175, 47, 47, 0.15);
+	text-align: center;
+	font-family: "Roboto";
+}
+.todo-write {
+	display: flex;	
+	-ms-align-items: center;
+	align-items: center;
+	box-shadow: inset 0px -2px 4px -2px rgba(0,0,0,0.4);
+	padding-bottom: 2px;
+	padding-right: 15px;	
+}
+.todoapp {
+	box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.4);
+	padding: 5px 0px;	
+}
+
+.write-check-label {
+	width: 40px;	
+	height: 40px;
+	box-sizing: border-box;
+	flex-shrink: 0;	
+	margin-right: 15px;	
+	position: relative;
+}
+.write-check-label::before {
+	content: '';
+	width: 15px;
+	height: 15px;
+	border-bottom: 3px solid rgba(153,153,153,0.4);
+	border-right: 3px solid rgba(153,153,153,0.4);
+	display: inline-block;	
+	transform: rotate(45deg);
+	position: absolute;
+	font-weight: 900;
+	font-size: 20px;
+	left: 15px;
+	top: 0;
+}
+.write-input-check:checked ~ .write-check-label::before {
+	border-color: rgba(153,153,153,0.7)
+}
+.write-input-check:checked ~ .write-check-label::before {
+	border-color: rgba(153,153,153,0.7)
+}
+.write-input-check {
+		display: none;
+}
+.write-input-in{
+	width: 100%;
+	padding: 10px 0px;
+	color: #4d4d4d;	
+	font-weight: 700;
+	font-size: 20px;		
+}
+.write-input-in::-webkit-input-placeholder { opacity: 0.4; }
+.write-input-in::-moz-placeholder          { opacity: 0.4; } /* Firefox 19+ */
+.write-input-in:-moz-placeholder           { opacity: 0.4; } /* Firefox 18- */
+.write-input-in:-ms-input-placeholder      { opacity: 0.4; }
+.todo-items {
+	list-style: none;	
+	padding: 0;	
+	margin: 0;
+	
+}
+.todo-item {
+	padding-left: 10px;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	padding-right: 15px;
+	border-bottom: 1px solid #ccc;
+	position: relative;		
+}
+.item-check-label {
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	width: 25px;	
+	height: 25px;
+	flex-shrink: 0;	
+	display: inline-block;
+	margin-right: 15px;	
+	position: relative;	
+}
+.item-check-label::before {
+	width: 7px;	
+	height: 15px;	
+	content: "";
+	display: inline-block;	
+	border-bottom: 1px solid green;
+	border-right: 1px solid green;
+	transform: rotate(45deg);
+	position: absolute;
+	left: 50%;
+	margin-left: -3.5px;
+	top: 1px;
+	display: none;				
+}
+.item-input-check {
+	display: none;	
+}
+.item-input-check:checked ~ .item-check-label::before {
+	display: inline-block;	
+}
+.todo-item__span {
+	width: 100%;
+	padding: 10px 0px;
+	color: #4d4d4d;	
+	font-weight: 700;
+	font-size: 20px;
+	transition: all 0.4s;	
+}
+.item-input-check:checked ~ .todo-item__span {
+	text-decoration:line-through;
+	color: #d9d9d9;
+}
+.todo-item:hover  .todo-item__close::before {
+	display: inline-block;
+}
+.todo-item__close {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	right: 10px;
+	top: 50%;
+	margin-top: -5px;
+	color: #cc9a9a;
+	font-weight: 700;
+	background-color: transparent;
+}
+.todo-item__close::before {
+	content: "×";
+	font-family: "Roboto";
+	line-height: 0px;
+	font-size: 28px;
+	display: none;
+}
+.todo-item__close:hover::before {
+	color: #af5b5e;
+	cursor: pointer;
+}
+
+
+/* filters */
+
+.filters {
+	display: flex;
+	padding: 7px;
+	padding-left: 15px;
+	justify-content: center;
+}
+.tasks-counter {
+}
+.filter-btns {
+	margin: 0 auto;
+}
+.filter-btn {
+	border: 1px solid transparent;
+	padding: 2px 7px;
+	border-radius: 3px;
+}
+.filter-btn.active {
+	border-color:  rgba(175, 47, 47, 0.2);
+}
+.btn-clear-completed {
+	background-color: transparent;
+}
+
+.write-input-check {
+	display: none;
+}
+
+/* filters */
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 550px;
+  }
+}
+
+
+
+
