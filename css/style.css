@@ -677,7 +677,13 @@ margin-bottom: 40px;
 	display: block;
 	
 }
-
+.link-content {
+	color: #2ec2e2;
+	text-decoration: none;
+}
+.link-content:visited {
+	color: #932ee2;
+}
 @media(max-width:991px) {
 	.portfolio {
 		padding-top: 50px;
